@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import useWorkExperience from "../hooks/work-experience/useWorkInfo";
+import experienceWork from "../assets/image-experience.png"
 
 export default function ExperienceWork() {
   const { workData } = useWorkExperience();
@@ -26,7 +27,7 @@ export default function ExperienceWork() {
         <Col xs={12} md={12} lg={5}>
           <img
             className="banner-image-work"
-            src="assets/image-experience.png"
+            src={experienceWork}
             alt="Descripción de la imagen"
           />
         </Col>

@@ -1,6 +1,6 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../../assets/logo.png"
+import logo from "../assets/logo.png"
 export default function NavBarComp() {
   return (
     <Navbar className="navbar" bg="transparent" variant="dark" expand="lg">
