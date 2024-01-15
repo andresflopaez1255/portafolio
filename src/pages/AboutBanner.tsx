@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutDetail from '../components/AboutDetail';
 
 export default function AboutBanner() {
