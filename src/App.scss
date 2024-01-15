@@ -336,6 +336,32 @@ html {
 
   /* Media query para pantallas más grandes (ej. computadoras de escritorio) */
   @media only screen and (min-width: 1025px) {
+    .about-title {
+      font-size: 2em;
+      font-family: $family;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    .title-comp {
+      font-size: 1.8em;
+      text-align: center;
+      margin-top: 4em;
+      margin-bottom: 1.5em;
+      color: $color-text-primary;
+    }
+    .about-text {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+      font-family: $family;
+    }
+    .paragraph {
+      color: white;
+      font-size: 1rem;
+      font-family: $family;
+      line-height: 40px;
+    }
     .mt-lg {
       margin-top: 5rem !important;
     }
@@ -369,8 +395,6 @@ html {
       height: 10rem;
       margin-top: 10em;
     }
-    body {
-      font-size: 20px;
-    }
+    
   }
 }
