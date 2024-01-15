@@ -47,7 +47,7 @@ export default function CarouselProjects() {
     }
   return (
     <Carousel draggable responsive={responsive}>
-      {projectsData.map((project:any) => {
+      {projectsData.map((project) => {
         const color = setBackgroundBagde(project.specialty)
 
         console.log(color)

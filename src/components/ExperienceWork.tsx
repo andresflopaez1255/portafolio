@@ -26,7 +26,7 @@ export default function ExperienceWork() {
         <Col xs={12} md={12} lg={5}>
           <img
             className="banner-image-work"
-            src="src/assets/image-experience.png"
+            src="assets/image-experience.png"
             alt="Descripción de la imagen"
           />
         </Col>

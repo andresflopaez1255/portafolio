@@ -5,7 +5,7 @@ export default function AboutBanner() {
         <div className="banner">
           <img
             className="banner-image"
-            src="src/assets/Rectangle.png"
+            src="assets/banner.png"
             alt="Descripción de la imagen"
           />
           <div className="banner-text">
