@@ -1,9 +1,10 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import logo from "../../assets/logo.png"
 export default function NavBarComp() {
   return (
     <Navbar className="navbar" bg="transparent" variant="dark" expand="lg">
-      <img src="assets/logo.png" alt="Descripción de la imagen" />
+      <img src={logo} alt="Descripción de la imagen" />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-link-container">
