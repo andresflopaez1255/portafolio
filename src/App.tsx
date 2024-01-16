@@ -13,7 +13,7 @@ function App() {
     <>
     <NavBarComp/>
      <AboutBanner/>
-      <main>
+      <main className="container">
       <TitleComponent marginTop='mt-15 mt-lg mt-sm mt-md' title="Sobre mi experiencia"/>
      <ExperienceWork/>
      <TitleComponent marginTop='mt-5' title="Mis proyectos"/>

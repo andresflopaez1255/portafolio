@@ -68,6 +68,7 @@ export default function CarouselProjects() {
   
                 <p className="paragraph mt-0">{project.description}</p>
                 <Badge bg={color}  className="badge" >{project.specialty}</Badge>
+                <br />
                 <Button onClick={()=>handleClick(project.urlRepository)} className="btn-project" variant="primary">
                   Visitar Web
                 </Button>

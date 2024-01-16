@@ -104,12 +104,7 @@ html {
       font-weight: 600;
     }
   }
-  .item-image-carousel {
-    width: 230px;
-    height: 400px;
-    border-radius: 25px;
-    object-fit: cover;
-  }
+  
 
   .container-info-project {
     margin: auto 0 auto 0;
@@ -286,7 +281,7 @@ html {
       .btn-project {
         width: 70%;
         margin-left: 12px;
-        margin-top: 2rem;
+        margin-top: 0rem;
       }
       .banner-image {
         width: 100%;
@@ -336,6 +331,12 @@ html {
 
   /* Media query para pantallas más grandes (ej. computadoras de escritorio) */
   @media only screen and (min-width: 1025px) {
+    .item-image-carousel {
+      width: 200px;
+      height:350px;
+      border-radius: 25px;
+      object-fit: cover;
+    }
     .about-title {
       font-size: 2em;
       font-family: $family;
