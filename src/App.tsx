@@ -1,4 +1,4 @@
-import { useRef } from "react";
+
 import "./App.scss";
 import CarouselProjects from "./components/CarouselProjects";
 import ExperienceWork from "./components/ExperienceWork";
