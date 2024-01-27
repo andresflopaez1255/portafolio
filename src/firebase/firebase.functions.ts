@@ -23,10 +23,22 @@ const getWorkInfo = async () =>{
   return data
 }
 
+const getTecnologies = async () =>{
+  const request = query(collection(db, "tecnologies"));
+  const data: DocumentData[] = []
+  const querySnapshot = await getDocs(request);
+  querySnapshot.forEach((doc) => {
+    data.push(doc.data())
+  });
+
+  return data
+}
+
 
 export {
     getInfoProjects,
-    getWorkInfo
+    getWorkInfo,
+    getTecnologies
 }
 
 

@@ -11,8 +11,7 @@ export default function AboutDetail() {
       <h1 className="about-title">Andres Florez</h1>
 
       <h3 className="about-text">
-        Soy desarrollador de aplicaciones moviles mutilplataforma, Desarrollo
-        web con react.js y maquetacion web con HTML y CSS
+        Soy desarrollador de aplicaciones moviles mutilplataforma con tecnologias como react native y flutter, tambien tengo conocimiento basico en react web
       </h3>
     </Col>
   );

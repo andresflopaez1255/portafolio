@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Badge from 'react-bootstrap/Badge';
+import { Element } from 'react-scroll';
 
 import useDataProjects from "../hooks/projects/useDataProjects";
 
@@ -46,13 +47,16 @@ export default function CarouselProjects() {
 
     }
   return (
-    <Carousel className="mb-5" draggable responsive={responsive}>
+      
+   
+    <Element name="projects">
+       <Carousel   className="mb-3" draggable responsive={responsive}>
       {projectsData.map((project:any) => {
         const color = setBackgroundBagde(project.specialty)
 
         console.log(color)
         return (
-          <div>
+          <div key={project.id}>
             <Row>
               <Col lg={5} md={6} xs={12}>
                 <img
@@ -80,5 +84,7 @@ export default function CarouselProjects() {
         )
       })}
     </Carousel>
+    </Element>
+   
   );
 }

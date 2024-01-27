@@ -7,6 +7,21 @@ html {
   padding: 0;
   background-color: #1c1c1c !important;
   display: block !important;
+  
+  height: 100vh; 
+  
+  h5 {
+    font-family: $family;
+    color: white;
+  }
+  .footer {
+    height: 5rem;
+    background: $color-btn;
+    margin-top: 8rem;
+  }
+  a {
+    cursor: pointer;
+  }
 
   p {
     margin: 0;
@@ -70,7 +85,11 @@ html {
       line-height: 38px;
     }
   }
-
+  .image-tecnologies {
+    width: 40%;
+    height: auto;
+    
+  }
   .title-comp {
     font-size: 1.75em;
     text-align: center;
@@ -91,7 +110,7 @@ html {
     padding-left: 25px;
     position: absolute;
     width: 100%;
-    z-index: 100px;
+    z-index: 100;
 
     .navbar-link-container {
       margin-left: auto;

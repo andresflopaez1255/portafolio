@@ -1,26 +1,46 @@
-import './App.scss';
-import CarouselProjects from './components/CarouselProjects';
-import ExperienceWork from './components/ExperienceWork';
-import NavBarComp from './components/NavBar';
-import TitleComponent from './components/TitleComponent';
-import AboutBanner from './pages/AboutBanner';
- 
+import { useRef } from "react";
+import "./App.scss";
+import CarouselProjects from "./components/CarouselProjects";
+import ExperienceWork from "./components/ExperienceWork";
+import NavBarComp from "./components/NavBar";
+import Tecnologies from "./components/Tecnologies";
+import TitleComponent from "./components/TitleComponent";
+import AboutBanner from "./pages/AboutBanner";
+import Footer from "./components/Footer";
 
 function App() {
-   
-   
+  const ref = useRef(null);
+
+
   return (
     <>
-    <NavBarComp/>
-     <AboutBanner/>
+      <NavBarComp />
+      <AboutBanner />
       <main className="container">
-      <TitleComponent marginTop='mt-15 mt-lg mt-sm mt-md' title="Sobre mi experiencia"/>
-     <ExperienceWork/>
-     <TitleComponent marginTop='mt-5' title="Mis proyectos"/>
-     <CarouselProjects/>
+        <TitleComponent
+          marginTop="mt-15 mt-lg mt-sm mt-md"
+          title="Sobre mi experiencia"
+        />
+        
+        <ExperienceWork />
+        
+       
+        <TitleComponent marginTop="mt-5" title="Tecnologias" />
+
+        <Tecnologies />
+        <TitleComponent marginTop="mt-5" title="Mis proyectos" />
+      
+        <CarouselProjects  />
+       
+      
+        
+
+       
       </main>
+
+      <Footer/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import useWorkExperience from "../hooks/work-experience/useWorkInfo";
 import experienceWork from "../assets/image-experience.png"
+import { Element } from 'react-scroll';
 
 export default function ExperienceWork() {
   const { workData } = useWorkExperience();
@@ -22,7 +23,7 @@ export default function ExperienceWork() {
     setshowText(false);
   };
   return (
-    <Container className="work-container">
+    <Element name="work" className="work-container">
       <Row>
         <Col xs={12} md={12} lg={5}>
           <img
@@ -41,6 +42,6 @@ export default function ExperienceWork() {
           </p>
         </Col>
       </Row>
-    </Container>
+    </Element>
   );
 }
