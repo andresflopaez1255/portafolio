@@ -9,7 +9,6 @@ import AboutBanner from "./pages/AboutBanner";
 import Footer from "./components/Footer";
 
 function App() {
-  const ref = useRef(null);
 
 
   return (
