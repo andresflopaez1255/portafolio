@@ -1,8 +1,6 @@
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
-import { ToggleProps } from "../interfaces/app.props";
-
-export default function AboutDetail({ show }: ToggleProps) {
+export default function AboutDetail() {
   return (
     <Col xs={12} md={12} lg={12} className="about">
       <Image

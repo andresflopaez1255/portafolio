@@ -16,9 +16,7 @@ function App() {
 
     <>
       <NavBarComp show={show} toggle={(state)=> setShow(state)} />
-      <AboutBanner show={show} toggle={function (state: boolean): void {
-        throw new Error("Function not implemented.");
-      } } />
+      <AboutBanner show={show}  />
       <main className="container">
         <TitleComponent
           marginTop="mt-15 mt-lg mt-sm mt-md"

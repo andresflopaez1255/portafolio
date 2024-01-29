@@ -11,7 +11,7 @@ export default function AboutBanner({ show }: ToggleProps) {
             alt="Descripción de la imagen"
           />
           <div className="banner-text">
-           <AboutDetail show={show} />
+           <AboutDetail  />
           </div>
         </div>
       );
