@@ -9,7 +9,7 @@ export default function NavBarComp({ show,toggle }: ToggleProps) {
     <Navbar className="navbar" variant="dark" expand="lg">
       <img src={logo} alt="Descripción de la imagen" />
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={()=>{
-        toggle(!show)
+        toggle!(!show)
       }} />
 
       <Navbar.Collapse className="basic-navbar-nav">

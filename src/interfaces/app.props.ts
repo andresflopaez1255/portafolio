@@ -1,4 +1,4 @@
 export interface ToggleProps {
     show: boolean
-    toggle:(state: boolean) => void
+    toggle?:(state: boolean) => void
 }

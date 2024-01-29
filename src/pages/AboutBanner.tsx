@@ -11,9 +11,7 @@ export default function AboutBanner({ show }: ToggleProps) {
             alt="Descripción de la imagen"
           />
           <div className="banner-text">
-           <AboutDetail show={show} toggle={function (state: boolean): void {
-            throw new Error('Function not implemented.');
-          } }/>
+           <AboutDetail show={show} />
           </div>
         </div>
       );
