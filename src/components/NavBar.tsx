@@ -2,15 +2,18 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import { ToggleProps } from "../interfaces/app.props";
 
-export default function NavBarComp() {
+export default function NavBarComp({ show,toggle }: ToggleProps) {
   return (
-    <Navbar className="navbar" bg="transparent" variant="dark" expand="lg">
+    <Navbar className="navbar" variant="dark" expand="lg">
       <img src={logo} alt="Descripción de la imagen" />
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={()=>{
+        toggle(!show)
+      }} />
 
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="navbar-link-container">
+      <Navbar.Collapse className="basic-navbar-nav">
+        <Nav className="navbar-link-container ml-0">
           <Link
             to="work"
             spy={true}
@@ -21,14 +24,15 @@ export default function NavBarComp() {
           >
             Mi experiencia
           </Link>
-         
+
           <Link
             to="tecnologies"
             spy={true}
             smooth={true}
             offset={-200}
             duration={200}
-            className="navbar-link-text">
+            className="navbar-link-text"
+          >
             Tecnologias
           </Link>
 
@@ -38,7 +42,8 @@ export default function NavBarComp() {
             smooth={true}
             offset={200}
             duration={200}
-            className="navbar-link-text">
+            className="navbar-link-text"
+          >
             Mis Trabajos
           </Link>
         </Nav>

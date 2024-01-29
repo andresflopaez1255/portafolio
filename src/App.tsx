@@ -7,14 +7,18 @@ import Tecnologies from "./components/Tecnologies";
 import TitleComponent from "./components/TitleComponent";
 import AboutBanner from "./pages/AboutBanner";
 import Footer from "./components/Footer";
+import { useState } from "react";
 
 function App() {
-
+  const [show, setShow] = useState(false)
 
   return (
+
     <>
-      <NavBarComp />
-      <AboutBanner />
+      <NavBarComp show={show} toggle={(state)=> setShow(state)} />
+      <AboutBanner show={show} toggle={function (state: boolean): void {
+        throw new Error("Function not implemented.");
+      } } />
       <main className="container">
         <TitleComponent
           marginTop="mt-15 mt-lg mt-sm mt-md"
