@@ -1,5 +1,6 @@
 
-import "./App.scss";
+import "./scss/app.scss";
+import "./scss/breakpoints.scss";
 import CarouselProjects from "./components/CarouselProjects";
 import ExperienceWork from "./components/ExperienceWork";
 import NavBarComp from "./components/NavBar";
@@ -19,7 +20,7 @@ function App() {
       <AboutBanner show={show}  />
       <main className="container">
         <TitleComponent
-          marginTop="mt-15 mt-lg mt-sm mt-md"
+          marginTop="mt-lg mt-sm mt-md"
           title="Sobre mi experiencia"
         />
         
