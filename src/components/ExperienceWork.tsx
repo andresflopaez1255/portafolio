@@ -1,6 +1,8 @@
 import  { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from 'react-bootstrap/Card';
+
 import useWorkExperience from "../hooks/work-experience/useWorkInfo";
 import experienceWork from "../assets/image-experience.png"
 import { Element } from 'react-scroll';
@@ -23,7 +25,8 @@ export default function ExperienceWork() {
   };
   return (
     <Element name="work" className="work-container">
-      <Row>
+       <Card bg="black">
+       <Row>
         <Col xs={12} md={12} lg={5}>
           <img
             className="banner-image-work"
@@ -41,6 +44,8 @@ export default function ExperienceWork() {
           </p>
         </Col>
       </Row>
+    </Card>
+      
     </Element>
   );
 }

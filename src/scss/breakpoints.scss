@@ -14,7 +14,7 @@ $family: "Noto Sans", sans-serif;
  
      .banner-image {
        width: 100%;
-       height:500px;
+       height: 100%;
      
        object-fit: cover;
        opacity: 15%;
@@ -37,7 +37,7 @@ $family: "Noto Sans", sans-serif;
  
        .banner-image {
          width: 100%;
-         height:370px;
+         height:100%;
        
          object-fit: cover;
          opacity: 15%;
@@ -262,31 +262,41 @@ $family: "Noto Sans", sans-serif;
      .banner {
        position: relative;
        width: 100%;
-       height: 400px;
+       height: 100%;
        text-align: center;
  
        .banner-image {
          width: 100%;
-         height:400px;
+         height:100%;
        
          object-fit: cover;
-         opacity: 15%;
+         opacity: 25%;
        }
  
        .banner-text {
          position: absolute;
-         top: 25%;
+         top: 30%;
          left: 50%;
          width: 60%;
          transform: translate(-50%, -50%);
          color: #fff;
        }
+
+       .name-text {
+        color: #db3030;
+        margin-left: 8px;
+        font-weight: bold;
+        font-size: 20px;
+       }
+       .btn-arrow {
+       border-width: 0;
+       }
      }
  
      .avatar {
        border-radius: 100%;
-       width: 10rem;
-       height: 10rem;
+       width: 12rem;
+       height: 12rem;
        margin-top: 10em;
      }
      
