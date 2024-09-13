@@ -122,5 +122,47 @@ html {
     width: calc(100% - 20px);
   }
 
- 
+  .navbar {
+    background-color: #212121; // Color de fondo oscuro
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between; // Espaciar contenido entre el logo y los enlaces
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: center; // Centrar los enlaces
+    flex-grow: 1;
+  }
+  
+  .navbar-link-text {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    &:hover {
+      color: #aaa; // Color al pasar el mouse
+    }
+  }
+  
+  .social-link {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    &:hover {
+      color: #aaa;
+    }
+  }
+  
 }

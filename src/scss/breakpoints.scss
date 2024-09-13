@@ -244,9 +244,8 @@ $family: "Noto Sans", sans-serif;
        color: $color-text-primary;
      }
      .about-text {
-       width: 60%;
-       margin-left: auto;
-       margin-right: auto;
+       width: 80%;
+       text-align: left;
        font-size: 1rem;
        font-family: $family;
      }
@@ -275,18 +274,19 @@ $family: "Noto Sans", sans-serif;
  
        .banner-text {
          position: absolute;
-         top: 30%;
+         top: 50%;
          left: 50%;
-         width: 60%;
+         width:100%;
          transform: translate(-50%, -50%);
          color: #fff;
        }
 
        .name-text {
         color: #db3030;
-        margin-left: 8px;
+       
         font-weight: bold;
-        font-size: 20px;
+        font-size: 50px;
+        text-align: left;
        }
        .btn-arrow {
        border-width: 0;
@@ -295,9 +295,9 @@ $family: "Noto Sans", sans-serif;
  
      .avatar {
        border-radius: 100%;
-       width: 12rem;
-       height: 12rem;
-       margin-top: 10em;
+       width: 25rem;
+       height: 25rem;
+      
      }
      
    }
