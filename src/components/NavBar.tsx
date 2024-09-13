@@ -6,14 +6,17 @@ import { ToggleProps } from "../interfaces/app.props";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export default function NavBarComp({ show, toggle }: ToggleProps) {
+  
   return (
+     // @ts-ignore
     <Navbar className="navbar bg-transparent" variant="dark" expand="lg">
       <Navbar.Brand href="#">
         <img src={logo} alt="Logo" className="navbar-logo" />
       </Navbar.Brand>
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
-        onClick={() => toggle(!show)}
+         // @ts-ignore
+        onClick={() => toggle(!show)} 
       />
       <Navbar.Collapse
         id="basic-navbar-nav"
