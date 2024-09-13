@@ -6,12 +6,33 @@ $family: "Noto Sans", sans-serif;
     .mt-sm {
       margin-top: 2rem !important;
     }
+    
+    .image-tecnologies {
+      width: 55%;
+      height: auto;
+      
+    }
+
+    .name-text {
+      color: #db3030;
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: left;
+     }
+    .avatar {
+      border-radius: 100%;
+      width: 12rem;
+      height: 12rem;
+     margin: auto;
+     display: none ;
+    }
     .banner-show {
      position: relative;
      width: 100%;
-     height: 550px;
+     height: 620px;
      text-align: center;
- 
+     
      .banner-image {
        width: 100%;
        height: 100%;
@@ -21,20 +42,25 @@ $family: "Noto Sans", sans-serif;
      }
  
      .banner-text {
-       position: absolute;
-       top: 40%;
-       left: 50%;
-       width: 100%;
-       transform: translate(-50%, -50%);
-       color: #fff;
-     }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 0.9rem;
+      padding: 0.2rem;
+    }
     }
      .banner {
        position: relative;
+       
        width: 100%;
-       height: 400px;
+       height: 550px;
        text-align: center;
  
+
+       
        .banner-image {
          width: 100%;
          height:100%;
@@ -44,13 +70,16 @@ $family: "Noto Sans", sans-serif;
        }
  
        .banner-text {
-         position: absolute;
-         top: 30%;
-         left: 50%;
-         width: 100%;
-         transform: translate(-50%, -50%);
-         color: #fff;
-       }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 0.9rem;
+      }
+
+    
      }
      .about-title {
        font-size: 1.5em;
@@ -58,6 +87,8 @@ $family: "Noto Sans", sans-serif;
        font-family: $family;
        font-weight: bold;
      }
+
+
      .paragraph {
        color: white;
        font-size: 1rem;
@@ -111,7 +142,9 @@ $family: "Noto Sans", sans-serif;
    /* Media query para pantallas medianas (ej. tablets) */
    @media only screen and (min-width: 601px) and (max-width: 1024px) {
  
-    
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
      .mt-md {
        margin-top: 5rem !important;
      }
@@ -295,9 +328,22 @@ $family: "Noto Sans", sans-serif;
  
      .avatar {
        border-radius: 100%;
-       width: 25rem;
-       height: 25rem;
-      
+       width: 12rem;
+       height: 12rem;
+      margin: auto;
      }
+
+     .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+      gap: 20px;
+    }
+    
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
      
    }

@@ -6,9 +6,14 @@ import { Row } from "react-bootstrap";
 
 export default function AboutDetail() {
   return (
-    <Row lg={8} className="mx-5 justify-content-center">
+    <Row lg={8} className="mx-lg-5 justify-content-center">
       <Col xs={12} md={12} lg={7} className="about align-content-center">
-      
+      <Col className="justify-content-center" lg={12}>
+        <Image
+          className="avatar"
+          src="https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/profile.jpg?alt=media&token=07e95711-1e0a-4150-9655-d2cd6e82135f"
+        />
+      </Col>
         <span className="name-text">Andres Florez</span>
       
         <h3 className="about-text">
@@ -37,12 +42,7 @@ export default function AboutDetail() {
         </Button>
       </Col>
 
-      <Col lg={4}>
-        <Image
-          className="avatar"
-          src="https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/profile.jpg?alt=media&token=07e95711-1e0a-4150-9655-d2cd6e82135f"
-        />
-      </Col>
+    
     </Row>
   );
 }

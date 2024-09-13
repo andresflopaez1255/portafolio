@@ -39,7 +39,9 @@ html {
     padding-left: 16px;
     padding-right: 16px;
   }
-
+  .grid-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas (teléfonos) */
+  }
   .about {
     margin-top: 3em;
    
@@ -54,11 +56,7 @@ html {
       line-height: 38px;
     }
   }
-  .image-tecnologies {
-    width: 35%;
-    height: auto;
-    
-  }
+ 
   .title-comp {
     font-size: 1.75em;
     text-align: center;

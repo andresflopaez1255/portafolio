@@ -1,32 +1,24 @@
-import useTecnologies from "../hooks/tecnologies/useTecnologies";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import "react-multi-carousel/lib/styles.css";
-import { Element } from 'react-scroll';
+import React from 'react';
+import { Element } from 'react-scroll'; // O cualquier librería que estés usando
+import useTecnologies from '../hooks/tecnologies/useTecnologies';
+import { Col, Row } from 'react-bootstrap';
 
 export default function Tecnologies() {
   const { tecnologies } = useTecnologies();
-  
+
   return (
-    <Element name="tecnologies" >
-       <Row>
-      {tecnologies.map((tecnology: any) => {
-        return (
-         
-            
-             <Col lg={4} className="mb-5">
-             <img
-                  className="image-tecnologies"
-                  src={tecnology.image}
-                  alt="Descripción de la imagen"
-                />
-             </Col>
-      
-        );
-      })}
-         
-         </Row>
+    <Element name="tecnologies">
+      <Row className="justify-content-center align-items-center">
+        {tecnologies.map((tecnology: any) => (
+          <Col xs={6} sm={6} lg={4} className="mb-5 d-flex justify-content-center align-items-center" key={tecnology.id}>
+            <img
+              className="image-tecnologies"
+              src={tecnology.image}
+              alt="Descripción de la imagen"
+            />
+          </Col>
+        ))}
+      </Row>
     </Element>
-   
   );
 }
