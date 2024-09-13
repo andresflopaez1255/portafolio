@@ -932,7 +932,7 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.21.0.tgz#7e7157c8543215245ceffc445134d9e843ba51c0"
   integrity sha512-a1sR2zSK1B4eYkiZu17ZUZhmUQcKjk2/j9Me2IDjk1GHW7LB5Z35LEzj9iJch6gtUfsnvZs1ZNyDW2oZSThrkA==
 
-"@rollup/rollup-darwin-arm64@4.21.0", "@rollup/rollup-darwin-arm64@^4.21.0":
+"@rollup/rollup-darwin-arm64@4.21.0":
   version "4.21.0"
   resolved "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.21.0.tgz"
   integrity sha512-zOnKWLgDld/svhKO5PD9ozmL6roy5OQ5T4ThvdYZLpiOhEGY+dp2NwUmxK0Ld91LrbjrvtNAE0ERBwjqhZTRAA==
