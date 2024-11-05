@@ -7,7 +7,7 @@ import Badge from "react-bootstrap/Badge";
 import { Element } from "react-scroll";
 
 import useDataProjects from "../hooks/projects/useDataProjects";
-import VideoPlayer from "./PlayerVideo";
+import VideoPlayerCustomButton from "./PlayerVideo";
 
 const responsive = {
   superLargeDesktop: {
@@ -56,7 +56,8 @@ export default function CarouselProjects() {
             <div key={project.id}>
               <Row>
                 <Row lg={12} md={12} xs={12}>
-                <VideoPlayer src={"https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/images%2Fexample%20yms.mov?alt=media&token=769bb42c-ce40-4b3e-a7b7-c06e2fef69f4"}/>
+                  
+                <VideoPlayerCustomButton />
                   {/*   <img
                   className="item-image-carousel"
                   src={project.image}
