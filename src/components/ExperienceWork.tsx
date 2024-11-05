@@ -37,7 +37,7 @@ export default function ExperienceWork() {
 
         <Col xs={12} md={12} lg={7}>
           <p className="paragraph">
-            {showText == false ? workData.substring(0, 406) : workData}
+            {showText == false ? workData.substring(0, 653) : workData}
             <p onClick={() => onClickText()} className="link-experience">
               {textLink}
             </p>

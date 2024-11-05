@@ -263,6 +263,12 @@ $family: "Noto Sans", sans-serif;
        border-radius: 25px;
        object-fit: cover;
      }
+
+     .image-tecnologies {
+      width:35%;
+      height: auto;
+      
+    }
      .about-title {
        font-size: 2em;
        font-family: $family;
@@ -321,9 +327,7 @@ $family: "Noto Sans", sans-serif;
         font-size: 50px;
         text-align: left;
        }
-       .btn-arrow {
-       border-width: 0;
-       }
+      
      }
  
      .avatar {

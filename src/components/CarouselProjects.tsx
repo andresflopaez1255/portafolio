@@ -3,10 +3,11 @@ import "react-multi-carousel/lib/styles.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Badge from 'react-bootstrap/Badge';
-import { Element } from 'react-scroll';
+import Badge from "react-bootstrap/Badge";
+import { Element } from "react-scroll";
 
 import useDataProjects from "../hooks/projects/useDataProjects";
+import VideoPlayer from "./PlayerVideo";
 
 const responsive = {
   superLargeDesktop: {
@@ -31,62 +32,61 @@ const responsive = {
 export default function CarouselProjects() {
   const { projectsData } = useDataProjects();
 
-  const handleClick = (link:string)=>{
-    window.open(link, '_blank')
+  const handleClick = (link: string) => {
+    window.open(link, "_blank");
+  };
+
+  const setBackgroundBagde = (text: string) => {
+    if (text.includes("web")) {
+      return "success";
     }
-    
-    const setBackgroundBagde = (text:string) =>{
-      if (text.includes("web")) {
-        return "success"
-      }
 
-      if (text.includes("movil")) {
-        return "primary"
-      }
-
-
+    if (text.includes("movil")) {
+      return "primary";
     }
+  };
   return (
-      
-   
     <Element name="projects">
-       <Carousel   className="mb-3" draggable responsive={responsive}>
-      {projectsData.map((project:any) => {
-        const color = setBackgroundBagde(project.specialty)
+      <Carousel className="mb-3" draggable responsive={responsive}>
+        {projectsData.map((project: any) => {
+          const color = setBackgroundBagde(project.specialty);
 
-        console.log(color)
-        return (
-          <div key={project.id}>
-            <Row>
-              <Col lg={5} md={6} xs={12}>
-                <img
+          console.log(color);
+          return (
+            <div key={project.id}>
+              <Row>
+                <Row lg={12} md={12} xs={12}>
+                <VideoPlayer src={"https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/images%2Fexample%20yms.mov?alt=media&token=769bb42c-ce40-4b3e-a7b7-c06e2fef69f4"}/>
+                  {/*   <img
                   className="item-image-carousel"
                   src={project.image}
                   alt="Descripción de la imagen"
-                />
-              </Col>
-  
-              <Col className="container-info-project" xs={12} lg={6} md={6}>
-                <h4 className="title-project">{project.name}</h4>
-              
-  
-                <p className="paragraph mt-0">{project.description}</p>
-                <Badge bg={color}  className="badge" >{project.specialty}</Badge>
-                <br />
-               {
-                project.urlRepository != null ?  <Button onClick={()=>handleClick(project.urlRepository)} className="btn-project" variant="primary">
-                Visitar Web
-              </Button> : null
+                /> */}
+                </Row>
 
-               }
-               
-              </Col>
-            </Row>
-          </div>
-        )
-      })}
-    </Carousel>
+                <Col className="container-info-project" xs={12} lg={12} md={6}>
+                  <h4 className="title-project">{project.name}</h4>
+
+                  <p className="paragraph mt-0">{project.description}</p>
+                  <Badge bg={color} className="badge">
+                    {project.specialty}
+                  </Badge>
+                  <br />
+                  {project.urlRepository != null ? (
+                    <Button
+                      onClick={() => handleClick(project.urlRepository)}
+                      className="btn-project"
+                      variant="primary"
+                    >
+                      Visitar Web
+                    </Button>
+                  ) : null}
+                </Col>
+              </Row>
+            </div>
+          );
+        })}
+      </Carousel>
     </Element>
-   
   );
 }

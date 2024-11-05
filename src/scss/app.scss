@@ -94,7 +94,10 @@ html {
 
   .container-info-project {
     margin: auto 0 auto 0;
-
+    .title-project {
+      text-align: center;
+      color: $color-text-primary;
+    }
     .btn-project {
       background-color: $color-btn;
       border-color: $color-btn;
@@ -162,5 +165,49 @@ html {
       color: #aaa;
     }
   }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: auto;
+  }
   
+  .video {
+    width: 100%;
+    display: block;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .play-icon {
+    width: 0;
+    height: 0;
+    border-left: 20px solid red;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+  
+  .play-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-arrow {
+    border-width: 0;
+    }
 }
