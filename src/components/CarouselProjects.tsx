@@ -56,8 +56,14 @@ export default function CarouselProjects() {
             <div key={project.id}>
               <Row>
                 <Row lg={12} md={12} xs={12}>
-                  
-                <VideoPlayerCustomButton />
+                  {
+                    project.url.includes("png") ?  <img
+                    className="item-image-carousel"
+                    src={project.url}
+                    alt="Descripción de la imagen"
+                  />: <VideoPlayerCustomButton src={project.url} />
+                  }
+                
                   {/*   <img
                   className="item-image-carousel"
                   src={project.image}

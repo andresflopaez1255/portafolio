@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const VideoPlayerCustomButton = () => {
+const VideoPlayerCustomButton = ({src}:{src:string}) => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
 
@@ -71,8 +71,8 @@ const VideoPlayerCustomButton = () => {
         width="100%"
       >
         <source
-          src="https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/images%2Fexample%20yms.mov?alt=media&token=769bb42c-ce40-4b3e-a7b7-c06e2fef69f4"
-          type="video/mp4"
+          src={src}
+          type="video/webm"
         />
         Tu navegador no soporta el formato de video.
       </video>
